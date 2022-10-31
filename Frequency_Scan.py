@@ -57,5 +57,6 @@ def fit_frequency_scan(x_data: typing.List[float], y_data: typing.List[float], a
         print('Centre frequency : {:.1f} Hz'.format(ufloat(best_fit_params[0], best_fit_errors[0])))
         print('Rabi rate : {:3f} kHz'.format(ufloat(best_fit_params[1], best_fit_errors[1])/1e3))
         print('Amplitude : {:.3f}'.format(ufloat(best_fit_params[2], best_fit_errors[1])))
+        print('Amplitude : {:.3f}'.format(ufloat(best_fit_params[2], best_fit_errors[1])))
 
     return best_fit_params, best_fit_errors
